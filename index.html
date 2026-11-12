@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eSpring™ Water Filtration — Clark Essential Products</title>
+<meta name="description" content="eSpring UV-C LED water purifiers: above-counter and below-counter models, e3 Carbon Filter, accessories, verified pricing, and why filtered water wins. Shop with Clark Essential Products.">
+<style>
+:root{
+  --amber:#fbbf24; --orange:#fb923c; --amberSoft:rgba(251,191,36,.14);
+  --bg:#020b12; --bg2:#041826; --panel:rgba(10,42,61,.62); --panel2:rgba(8,32,48,.85);
+  --aqua:#22d3ee; --teal:#2dd4bf; --deep:#0ea5c6; --gold:#f5c86b;
+  --ink:#eaf8ff; --muted:#a9c9d8; --line:rgba(34,211,238,.28);
+  --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:var(--aqua)}
+img,svg{max-width:100%}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+/* E5 scroll progress wave */
+#progress{position:fixed;top:0;left:0;height:5px;width:0%;z-index:99;background:linear-gradient(90deg,var(--amber),var(--orange),var(--aqua));box-shadow:0 0 14px var(--aqua);border-radius:0 4px 4px 0}
+/* E9 backdrop-blur sticky nav */
+nav{position:sticky;top:0;z-index:90;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(2,14,22,.72);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.logo{font-weight:800;letter-spacing:.4px;font-size:1.05rem}
+.logo span{color:var(--aqua)}
+.navlinks{display:none;gap:18px;font-size:.92rem}
+.navlinks a{color:var(--muted);text-decoration:none}
+.navlinks a:hover{color:var(--ink)}
+@media(min-width:820px){.navlinks{display:flex}}
+/* E8 gradient-shift CTA */
+.cta{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:800;text-decoration:none;color:#03202e;background:linear-gradient(120deg,var(--teal),var(--aqua),#7dd3fc,var(--teal));background-size:220% 220%;animation:gradShift 5s ease infinite;box-shadow:0 0 22px rgba(34,211,238,.45);position:relative;overflow:hidden}
+.cta:hover{transform:translateY(-2px)}
+.cta.ghost{background:transparent;color:var(--amber);border:1px solid var(--amber);box-shadow:0 0 14px rgba(251,191,36,.22);animation:none}
+@keyframes gradShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+/* HERO */
+header{position:relative;padding:64px 0 90px;background:radial-gradient(900px 480px at 75% -10%,rgba(34,211,238,.28),transparent 60%),radial-gradient(700px 400px at 8% 20%,rgba(45,212,191,.16),transparent 55%),linear-gradient(180deg,#03131f,#020b12);overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(50px);opacity:.5;pointer-events:none}
+.orb1{width:340px;height:340px;background:#0e7490;top:-90px;right:-60px}
+.orb2{width:260px;height:260px;background:#134e4a;bottom:-80px;left:-50px}
+.hero-grid{display:grid;gap:36px;align-items:center;position:relative;z-index:2}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr}}
+.kicker{color:var(--amber);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.05;margin:12px 0 16px}
+h1 em{font-style:normal;color:var(--aqua);text-shadow:0 0 26px rgba(34,211,238,.65)}
+.lede{color:var(--muted);font-size:1.08rem;max-width:56ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 18px}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.8rem;color:var(--muted);background:rgba(4,24,38,.6)}
+/* A1 wave drift */
+.waves{position:absolute;left:0;right:0;bottom:-6px;height:90px;overflow:hidden;pointer-events:none}
+.waves svg{position:absolute;bottom:0;width:200%;height:100%;animation:waveDrift 11s linear infinite}
+.waves svg:nth-child(2){opacity:.45;animation-duration:17s;animation-direction:reverse}
+@keyframes waveDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* Unit visual */
+.unit-card{background:var(--panel);border:1px solid var(--line);border-radius:26px;padding:22px;backdrop-filter:blur(10px);box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 34px rgba(34,211,238,.14);position:relative}
+.unit-svg{display:block;margin:0 auto}
+/* A2 droplet fall */
+.droplet{animation:dropFall 2.6s ease-in infinite}
+@keyframes dropFall{0%{transform:translateY(0);opacity:0}18%{opacity:1}82%{opacity:1}100%{transform:translateY(64px);opacity:0}}
+/* A3 bubble rise */
+.bubble{animation:bubbleRise 3.4s ease-in infinite}
+.bubble.b2{animation-delay:1.1s}.bubble.b3{animation-delay:2s}
+@keyframes bubbleRise{0%{transform:translateY(0);opacity:0}20%{opacity:.85}100%{transform:translateY(-72px);opacity:0}}
+/* A4 UV pulse */
+.uvcore{animation:uvPulse 2.2s ease-in-out infinite;transform-origin:center}
+@keyframes uvPulse{0%,100%{opacity:.55}50%{opacity:1}}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(min-width:700px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center;backdrop-filter:blur(8px)}
+.stat b{display:block;font-size:1.65rem;color:var(--aqua)}
+.stat:nth-child(even) b{color:var(--amber)}
+.stat span{font-size:.82rem;color:var(--muted)}
+section{padding:64px 0}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:10px}
+h2 .hl{color:var(--aqua)}
+.sub{color:var(--muted);max-width:68ch;margin-bottom:28px}
+/* A6 scroll reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+/* PARALLAX centerpiece */
+#journey{background:linear-gradient(180deg,#020b12,#032032 30%,#032032 70%,#020b12)}
+.journey-shell{display:grid;gap:20px}
+@media(min-width:900px){.journey-shell{grid-template-columns:250px 1fr}}
+/* E4 sticky stage indicator */
+.stage-nav{position:sticky;top:84px;align-self:start;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;backdrop-filter:blur(10px)}
+.stage-nav li{list-style:none;padding:10px 12px;border-radius:12px;color:var(--muted);font-weight:600;transition:all .35s}
+.stage-nav li.active{background:rgba(34,211,238,.16);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.stage-scene{position:relative;height:560px;border-radius:26px;border:1px solid var(--line);overflow:hidden;background:linear-gradient(180deg,#062a42,#041826 55%,#02141f)}
+.layer{position:absolute;inset:0;will-change:transform}
+.particle{position:absolute;width:11px;height:11px;border-radius:50%;background:#f59e0b;box-shadow:0 0 8px rgba(245,158,11,.8);will-change:transform,opacity}
+.particle.blue{background:#38bdf8;box-shadow:0 0 8px rgba(56,189,248,.8)}
+.particle.grey{background:#94a3b8;box-shadow:none}
+.flowline{position:absolute;left:50%;top:0;width:6px;height:100%;transform:translateX(-50%);background:linear-gradient(180deg,rgba(245,158,11,.55),rgba(34,211,238,.25) 45%,rgba(45,212,191,.75));border-radius:3px}
+.stage-label{position:absolute;left:14px;padding:7px 12px;border-radius:999px;background:rgba(2,16,26,.82);border:1px solid var(--line);font-size:.8rem;font-weight:700}
+.clean-glass{position:absolute;right:16px;bottom:16px;background:rgba(2,16,26,.82);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:.85rem}
+/* E10 shimmer on clean water */
+.shimmer{position:relative;overflow:hidden}
+.shimmer::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(125,211,252,.35) 50%,transparent 70%);transform:translateX(-120%);animation:shimmerMove 3.2s ease infinite}
+@keyframes shimmerMove{to{transform:translateX(120%)}}
+/* Comparison */
+.vs{display:grid;gap:16px}
+@media(min-width:820px){.vs{grid-template-columns:1fr 1fr}}
+.vs-card{border-radius:var(--radius);padding:22px;border:1px solid var(--line);background:var(--panel2)}
+.vs-card.bad{border-color:rgba(248,113,113,.35)}
+.vs-card.good{border-color:rgba(45,212,191,.5);box-shadow:0 0 28px rgba(45,212,191,.15)}
+.vs-card h3{margin-bottom:12px}
+.vs-card li{margin:8px 0 8px 18px;color:var(--muted)}
+.vs-card li b{color:var(--ink)}
+/* E7 before/after slider */
+.ba{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);margin-top:22px;user-select:none}
+.ba-row{display:grid;grid-template-columns:1fr 1fr;min-height:170px}
+.ba-left{background:linear-gradient(160deg,#3f2d12,#241a08);padding:20px}
+.ba-right{background:linear-gradient(160deg,#064e63,#042f3e);padding:20px;position:absolute;top:0;right:0;bottom:0;overflow:hidden}
+.ba h4{margin-bottom:8px}.ba p{color:var(--muted);font-size:.92rem}
+.ba input[type=range]{width:100%;margin-top:14px;accent-color:var(--aqua)}
+/* Cards — A8 tilt + E6 hover shine */
+.grid{display:grid;gap:16px}
+@media(min-width:760px){.grid.c3{grid-template-columns:repeat(3,1fr)}.grid.c2{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;backdrop-filter:blur(9px);position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;will-change:transform}
+.card::before{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.13),transparent);transform:skewX(-18deg);transition:left .6s ease}
+.card:hover::before{left:130%}
+.card:hover{box-shadow:0 18px 42px rgba(0,0,0,.45),0 0 26px rgba(34,211,238,.18)}
+.card h3{margin:8px 0 6px;font-size:1.08rem}
+.card p,.card li{color:var(--muted);font-size:.94rem}
+.card li{margin:5px 0 5px 18px}
+.price{font-size:1.5rem;font-weight:800;color:var(--amber);text-shadow:0 0 16px rgba(251,191,36,.35);margin:8px 0 2px}
+.itemno{font-size:.8rem;color:var(--muted);letter-spacing:.6px}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:rgba(245,200,107,.16);color:var(--gold);border:1px solid rgba(245,200,107,.4)}
+.tag.blue{background:rgba(34,211,238,.14);color:var(--aqua);border-color:var(--line)}
+.mini-cta{display:inline-block;margin-top:12px;font-weight:700;text-decoration:none;color:var(--aqua)}
+.mini-cta:hover{text-decoration:underline}
+/* A10 cert marquee */
+.eyebrow{color:var(--amber);font-weight:800;letter-spacing:2.5px;text-transform:uppercase;font-size:.78rem;margin-bottom:8px}
+.badge.warm{border-color:rgba(251,191,36,.55);color:#fde68a;background:var(--amberSoft)}
+/* Shop Now fixed pill + premium treatment */
+.logo{flex:0 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shopnow{white-space:nowrap;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;line-height:1;padding:11px 20px;animation:gradShift 5s ease infinite,pulseRing 2.4s ease-out infinite}
+.shopnow::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-130%);animation:btnShine 2.8s ease infinite}
+@keyframes btnShine{0%,55%{transform:translateX(-130%)}88%,100%{transform:translateX(130%)}}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(251,191,36,.5),0 0 22px rgba(34,211,238,.4)}70%{box-shadow:0 0 0 13px rgba(251,191,36,0),0 0 22px rgba(34,211,238,.4)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0),0 0 22px rgba(34,211,238,.4)}}
+.shopnow:hover{transform:translateY(-2px) scale(1.045)}
+.shopnow:active{transform:scale(.96)}
+@media(max-width:600px){.logo{font-size:.88rem;white-space:normal;line-height:1.25;overflow:visible}.logo span{display:block;font-size:.8rem}.shopnow{padding:10px 16px;font-size:.92rem}}
+/* CTA ripple */
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rippleGo .65s ease-out forwards;pointer-events:none}
+@keyframes rippleGo{to{transform:scale(4);opacity:0}}
+/* Hero floating particles */
+#heroFx{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+#heroFx span{position:absolute;bottom:-24px;border-radius:50%;background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.85),rgba(125,211,252,.35) 60%,rgba(125,211,252,.08));border:1px solid rgba(125,211,252,.35);animation:floatUp linear infinite}
+#heroFx span.warm{background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.9),rgba(251,191,36,.4) 60%,rgba(251,146,60,.1));border-color:rgba(251,191,36,.4)}
+@keyframes floatUp{0%{transform:translateY(0) translateX(0);opacity:0}12%{opacity:.85}85%{opacity:.7}100%{transform:translateY(-105vh) translateX(26px);opacity:0}}
+/* UV stage amber glow */
+#uvGlow{position:absolute;left:50%;top:58%;width:340px;height:190px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(251,191,36,.5),rgba(251,146,60,.16) 55%,transparent 72%);filter:blur(6px);opacity:0;pointer-events:none}
+/* Featured card animated gradient border */
+.card.featured{border:1px solid transparent;background:linear-gradient(rgba(8,32,48,.94),rgba(8,32,48,.94)) padding-box,linear-gradient(120deg,var(--amber),var(--orange),var(--aqua),var(--amber)) border-box;background-size:100% 100%,230% 230%;animation:borderFlow 6s linear infinite}
+@keyframes borderFlow{to{background-position:0 0,230% 0}}
+.marquee-track span:nth-child(even){color:var(--amber);text-shadow:0 0 14px rgba(251,191,36,.4)}
+.marquee-track span:nth-child(odd){text-shadow:0 0 12px rgba(34,211,238,.3)}
+/* Back-to-top droplet */
+#toTop{position:fixed;right:16px;bottom:18px;z-index:95;width:52px;height:52px;border-radius:50%;border:1px solid rgba(251,191,36,.6);background:rgba(4,24,38,.9);color:var(--amber);font-size:1.25rem;cursor:pointer;opacity:0;transform:translateY(16px) scale(.85);transition:all .4s ease;box-shadow:0 0 18px rgba(251,191,36,.3)}
+#toTop.show{opacity:1;transform:none}
+#toTop:hover{transform:translateY(-3px) scale(1.06)}
+.steps{display:grid;gap:12px;margin-top:22px;text-align:left}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:var(--panel);border:1px solid rgba(251,191,36,.35);border-radius:14px;padding:14px 16px;color:var(--muted);font-size:.93rem}
+.step b{color:var(--amber);display:block;margin-bottom:4px}
+.marquee{overflow:hidden;border-top:1px solid rgba(251,191,36,.35);border-bottom:1px solid rgba(251,191,36,.35);padding:14px 0;background:rgba(4,24,38,.55);box-shadow:inset 0 0 34px rgba(251,191,36,.06)}
+.marquee-track{display:flex;gap:44px;width:max-content;animation:marqueeMove 26s linear infinite;font-weight:700;color:var(--muted);white-space:nowrap}
+@keyframes marqueeMove{to{transform:translateX(-50%)}}
+/* FAQ A9 accordion */
+.faq{border:1px solid var(--line);border-radius:14px;margin-bottom:10px;background:var(--panel2);overflow:hidden}
+.faq button{width:100%;text-align:left;background:none;border:none;color:var(--ink);font-size:1rem;font-weight:700;padding:16px 18px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.faq .ans{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.faq .ans p{padding:0 18px 16px;color:var(--muted)}
+.faq.open .ans{max-height:300px}
+.faq .chev{transition:transform .4s}
+.faq.open .chev{transform:rotate(180deg)}
+footer{padding:44px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;background:#01070c}
+footer a{color:var(--aqua)}
+.center{text-align:center}
+.note{font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav><div class="wrap">
+  <div class="logo">💧 eSpring™ <span>· Clark Essential Products</span></div>
+  <div class="navlinks">
+    <a href="#journey">How It Works</a><a href="#why">Why Filter</a><a href="#lineup">Models</a><a href="#accessories">Accessories</a><a href="#faq">FAQ</a>
+  </div>
+  <a class="cta shopnow" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop Now</a>
+</div></nav>
+
+<header>
+  <div class="orb orb1"></div><div class="orb orb2"></div>
+  <div id="heroFx" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">CLARK ESSENTIAL PRODUCTS · AMWAY ESPRING™</div>
+      <h1>Water, <em>purified</em> at the last step — right at your tap.</h1>
+      <p class="lede">The eSpring™ UV-C LED Water Purifier pairs a 3-layer e3 Carbon Filter with UV-C LED technology to effectively <b>reduce 170+ contaminants</b> and destroy up to <b>99.9999% of bacteria</b> — while keeping the beneficial minerals your body uses: calcium, magnesium, potassium and zinc.</p>
+      <div class="hero-ctas">
+        <a class="cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop eSpring in Our Shop</a>
+        <a class="cta ghost" href="#lineup">See All Models ↓</a>
+      </div>
+      <div class="badges">
+        <span class="badge warm">🏅 WQA Gold Seal</span><span class="badge">✅ NSF/ANSI 42 · 53 · 55 · 401</span>
+        <span class="badge">💧 1,320 gal per filter</span><span class="badge warm">🛡️ 5-Year Limited Warranty</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><b><span class="count" data-to="170">0</span>+</b><span>contaminants reduced</span></div>
+        <div class="stat"><b><span class="count" data-to="1320">0</span></b><span>gallons per cartridge</span></div>
+        <div class="stat"><b><span class="count" data-to="10000">0</span></b><span>bottles replaced / filter*</span></div>
+        <div class="stat"><b><span class="count" data-to="10">0</span> yrs</b><span>UV-C LED design life</span></div>
+      </div>
+      <p class="note" style="margin-top:10px">*One e3 filter treats up to 5,000 L — the equivalent of up to 10,000 single-use 500 mL bottles. Based on average annual use for a family of six; actual filter life depends on water quality and usage.</p>
+    </div>
+    <div class="unit-card">
+      <svg class="unit-svg" width="300" height="360" viewBox="0 0 300 360" role="img" aria-label="eSpring purifier illustration">
+        <ellipse cx="150" cy="338" rx="105" ry="12" fill="rgba(34,211,238,.18)"/>
+        <rect x="82" y="46" width="136" height="282" rx="26" fill="#0b354d" stroke="#22d3ee" stroke-width="2"/>
+        <rect x="98" y="66" width="104" height="120" rx="16" fill="#062a42"/>
+        <circle class="uvcore" cx="150" cy="126" r="30" fill="#22d3ee" opacity=".7"/>
+        <circle cx="150" cy="126" r="14" fill="#e0fbff"/>
+        <text x="150" y="206" text-anchor="middle" fill="#a9c9d8" font-size="12" font-weight="700">UV-C LED</text>
+        <rect x="98" y="222" width="104" height="62" rx="12" fill="#0e4a3a"/>
+        <text x="150" y="249" text-anchor="middle" fill="#a7f3d0" font-size="12" font-weight="700">e3 CARBON</text>
+        <text x="150" y="268" text-anchor="middle" fill="#a7f3d0" font-size="11">3-LAYER FILTER</text>
+        <circle class="bubble" cx="118" cy="300" r="5" fill="#7dd3fc"/>
+        <circle class="bubble b2" cx="150" cy="306" r="4" fill="#7dd3fc"/>
+        <circle class="bubble b3" cx="182" cy="300" r="6" fill="#7dd3fc"/>
+        <path d="M150 6 q10 14 0 22 q-10 -8 0 -22" fill="#38bdf8" class="droplet"/>
+        <text x="150" y="352" text-anchor="middle" fill="#eaf8ff" font-size="14" font-weight="800">eSpring™ UV-C LED</text>
+      </svg>
+      <p class="center note">Above-counter or below-counter — same purification core, your choice of install.</p>
+    </div>
+  </div>
+  <div class="waves" aria-hidden="true">
+    <svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path d="M0,50 C200,90 400,10 600,50 C800,90 1000,10 1200,50 L1200,90 L0,90 Z" fill="rgba(34,211,238,.16)"/></svg>
+    <svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path d="M0,60 C220,20 420,85 620,55 C820,25 1020,80 1200,55 L1200,90 L0,90 Z" fill="rgba(45,212,191,.14)"/></svg>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="mtrack">
+  <span>🏅 WQA GOLD SEAL</span><span>✅ NSF/ANSI 42</span><span>✅ NSF/ANSI 53</span><span>✅ NSF/ANSI 55 CLASS B</span><span>✅ NSF/ANSI 401</span><span>🌍 WORLD'S #1-SELLING HOME WATER PURIFIER BRAND†</span><span>💧 170+ CONTAMINANTS REDUCED</span><span>♻️ 10,000 BOTTLES PER FILTER</span>
+</div></div>
+<p class="wrap note" style="padding-top:8px">†Based on a Verify Markets study of 2022 global sales revenue, as published by Amway.</p>
+
+<!-- SCROLL PARALLAX JOURNEY -->
+<section id="journey">
+  <div class="wrap">
+    <div class="eyebrow reveal">🔬 The Purification Journey</div>
+    <h2 class="reveal">Follow one pour <span class="hl">through the system</span> — scroll to purify it</h2>
+    <p class="sub reveal">Keep scrolling. The orange and gray particles are the stuff you don't want in your glass. Watch what each stage does to them — and what comes out the faucet at the end.</p>
+    <div class="journey-shell">
+      <ol class="stage-nav reveal">
+        <li data-stage="0">🚰 1 · Tap water enters</li>
+        <li data-stage="1">🧽 2 · Pre-Filter traps the big stuff</li>
+        <li data-stage="2">🛡️ 3 · Defense Guard + Carbon Block</li>
+        <li data-stage="3">💜 4 · UV-C LED chamber</li>
+        <li data-stage="4">✨ 5 · Clean water out</li>
+      </ol>
+      <div class="stage-scene reveal" id="scene">
+        <div class="layer" data-depth="0.25"><div class="flowline"></div></div>
+        <div class="layer" data-depth="0.55">
+          <div class="stage-label" style="top:12%">🧽 PRE-FILTER — sediment, sand, dust, scale</div>
+          <div class="stage-label" style="top:38%">🛡️ DEFENSE GUARD + CARBON BLOCK — down to 0.2 microns</div>
+          <div class="stage-label" style="top:64%">💜 UV-C LED — bacteria, viruses, cysts</div>
+        </div>
+        <div id="uvGlow"></div>
+        <div class="layer" data-depth="1" id="particleLayer"></div>
+        <div class="layer" data-depth="1.35">
+          <svg style="position:absolute;left:50%;bottom:8px;transform:translateX(-50%)" width="120" height="92" viewBox="0 0 120 92"><path d="M60 0 v26 M34 26 h52 M46 26 v18 a14 14 0 0 0 28 0 v-18" stroke="#7dd3fc" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M60 62 q7 10 0 16 q-7 -6 0 -16" fill="#22d3ee" class="droplet"/></svg>
+        </div>
+        <div class="clean-glass shimmer">✨ Stage <span id="stageNum">1</span> of 5 — <span id="stageText">tap water, straight from the line</span></div>
+      </div>
+    </div>
+    <p class="note reveal" style="margin-top:14px">How Amway describes the e3 filter's three layers: the <b>Pre-Filter</b> traps larger particles like sediment and scale; the <b>Defense Guard</b> captures fine particles down to 0.2 microns, including microplastics; the <b>Carbon Block</b> reduces PFOA/PFOS, 19 categories of pharmaceuticals, lead, mercury, VOCs, pesticides and herbicides. Then UV-C LEDs destroy up to 99.9999% of bacteria, 99.99% of viruses and 99.9% of waterborne cysts. Designed only for use with potable water deemed safe to drink by local public health authorities.</p>
+  </div>
+</section>
+
+<!-- WHY FILTER -->
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow reveal">🤔 Should You Filter?</div>
+    <h2 class="reveal">Why filter at all? <span class="hl">Tap vs. eSpring</span></h2>
+    <p class="sub reveal">Municipal water is treated before it reaches your street — then it travels through pipes, and picks up taste, odor and whatever the journey adds. Filtering at the tap is filtering at the <b>last step before your glass</b>. Drag the slider to compare.</p>
+    <div class="vs">
+      <div class="vs-card bad reveal"><h3>🚰 Unfiltered tap water</h3><ul>
+        <li><b>Taste &amp; odor:</b> chlorine used in treatment is still in the glass</li>
+        <li><b>No final barrier:</b> nothing between aging pipes and your family</li>
+        <li><b>Bottled-water fallback:</b> ongoing cost, plastic waste, hauling cases home</li>
+        <li><b>Unknowns stay unknown:</b> no monitor tells you what's passing through</li>
+        <li><b>Minerals:</b> present — but so is everything else</li>
+      </ul></div>
+      <div class="vs-card good reveal"><h3>💧 eSpring™ filtered water</h3><ul>
+        <li><b>Better taste, odor &amp; clarity:</b> carbon block reduces chlorine taste and odor</li>
+        <li><b>Certified reduction:</b> 170+ contaminants, incl. lead, mercury, PFOA/PFOS, microplastics*</li>
+        <li><b>UV-C LED treatment:</b> destroys up to 99.9999% of bacteria, 99.99% of viruses, 99.9% of cysts*</li>
+        <li><b>Keeps the good minerals:</b> calcium, magnesium, potassium, zinc pass through</li>
+        <li><b>One filter ≈ 10,000 bottles:</b> 1,320 gallons before a once-a-year change</li>
+      </ul></div>
+    </div>
+    <div class="ba reveal" id="baBox">
+      <div class="ba-row">
+        <div class="ba-left"><h4>🚰 Before — straight tap</h4><p>Chlorine taste, pipe journey, no last-step treatment. Fine for flushing — not what most families choose to drink all day.</p></div>
+        <div class="ba-right" id="baRight" style="width:50%"><h4>✨ After — eSpring</h4><p>Carbon-filtered + UV-C treated, minerals kept, monitored by a smart filter-life indicator and the Amway Healthy Home™ app.</p></div>
+      </div>
+      <input type="range" id="baRange" min="15" max="85" value="50" aria-label="Compare before and after">
+    </div>
+    <p class="note reveal" style="margin-top:10px">*As published by Amway for the new eSpring Water Purifier. Not a medical claim — eSpring is designed for use with potable water deemed safe to drink by local public health authorities.</p>
+  </div>
+</section>
+
+<!-- LINEUP -->
+<section id="lineup" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow reveal">🛒 The Lineup</div>
+    <h2 class="reveal">The lineup — <span class="hl">every current model</span></h2>
+    <p class="sub reveal">Same UV-C LED + e3 Carbon purification core in every unit. Pick the install that fits your kitchen. Prices below are the current U.S. retail prices verified on amway.com for this page — confirm the live price in our shop before you check out, as prices can change.</p>
+    <div class="grid c3">
+      <div class="card reveal tilt"><span class="tag blue">Renter-friendly</span><h3>Above the Counter Unit with Diverter</h3><div class="itemno">ITEM #122940</div><div class="price">$1,508.00</div>
+        <ul><li>Screws onto most standard kitchen faucets — no plumbing changes</li><li>Perfect for rentals &amp; temporary installs</li><li>16% smaller footprint, sits against the backsplash</li><li>Flow rate 0.75 GPM — fills 1 L in ~45 seconds</li></ul>
+        <a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop this model →</a></div>
+      <div class="card reveal tilt featured"><span class="tag">Complete System</span><h3>Below Counter Unit with Auxiliary Faucet</h3><div class="itemno">ITEM #122941</div><div class="price">$1,508.00</div>
+        <ul><li>Unit hides under the sink; dedicated aux faucet on top</li><li>Needs a grounded outlet under the sink</li><li>No visible tubing, full counter space back</li><li>Same 1,320-gal e3 cartridge</li></ul>
+        <a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop this model →</a></div>
+      <div class="card reveal tilt"><span class="tag blue">Custom installs</span><h3>Below Counter — Single Line Output</h3><div class="itemno">ITEM #122942</div><div class="price">$1,508.00</div>
+        <ul><li>Connects directly to your existing faucet line or ice maker</li><li>For balanced-pressure and custom setups</li><li>Below-counter, out of sight</li><li>Same UV-C LED purification core</li></ul>
+        <a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop this model →</a></div>
+    </div>
+    <h3 class="reveal" style="margin:34px 0 6px">👑 Designer Faucet models — the premium finish</h3>
+    <p class="sub reveal" style="margin-bottom:18px">Below-counter unit with a designer faucet kit. Three finishes, one price — pick the one that matches your kitchen.</p>
+    <div class="grid c3">
+      <div class="card reveal tilt"><span class="tag">Designer Pick</span><h3>Below Counter — Designer Faucet, Nickel</h3><div class="itemno">ITEM #128212UN</div><div class="price">$1,620.00</div><p>Brushed nickel warmth that pairs with stainless appliances. The hero finish.</p><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop Nickel →</a></div>
+      <div class="card reveal tilt"><span class="tag">Designer Pick</span><h3>Below Counter — Designer Faucet, Black</h3><div class="itemno">ITEM #128212UB</div><div class="price">$1,620.00</div><p>Matte black statement finish for modern, high-contrast kitchens.</p><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop Black →</a></div>
+      <div class="card reveal tilt"><span class="tag">Designer Pick</span><h3>Below Counter — Designer Faucet, Chrome</h3><div class="itemno">ITEM #128212UC</div><div class="price">$1,620.00</div><p>Classic polished chrome — matches the fixtures most kitchens already have.</p><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop Chrome →</a></div>
+    </div>
+    <p class="note reveal" style="margin-top:16px">Every model: 5-year limited warranty · UV-C LEDs designed to last up to 10 years · uses 25% less energy than the previous model when actively in use · Amway Healthy Home™ app connectivity for filter-life monitoring.</p>
+  </div>
+</section>
+
+<!-- ACCESSORIES -->
+<section id="accessories">
+  <div class="wrap">
+    <div class="eyebrow reveal">🔧 Keep It Running</div>
+    <h2 class="reveal">Accessories &amp; <span class="hl">replacement filters</span></h2>
+    <p class="sub reveal">The system tells you when it's time — a filter-life indicator on the unit and alerts in the Amway Healthy Home™ app. Filter changes are "2-1-0": about <b>2 minutes, 1 time per year, 0 tools</b>.</p>
+    <div class="grid c3">
+      <div class="card reveal tilt"><span class="tag">Replace yearly</span><h3>eSpring™ e3 Carbon Filter Replacement Cartridge</h3><div class="itemno">ITEM #122943</div><div class="price">$293.00</div><ul><li>The heart of the new system — all 3 layers in one cartridge</li><li>Lasts up to 5,000 L / 1,320 gal or 1 year, whichever comes first</li><li>≈ <b>$0.22 per gallon</b> at full rated life</li></ul><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop the filter →</a></div>
+      <div class="card reveal tilt"><span class="tag blue">Protects the filter</span><h3>eSpring™ Pre-Filter</h3><div class="itemno">ITEM #127063</div><div class="price">$15.75</div><ul><li>Traps sediment and larger particles before they reach the e3 cartridge</li><li>Helps the main filter reach its full rated life</li><li>Swap it when flow slows or as the unit indicates</li></ul><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop Pre-Filter →</a></div>
+      <div class="card reveal tilt"><span class="tag blue">Legacy systems</span><h3>UV Water Purifier Replacement Cartridge with UV Technology</h3><div class="itemno">ITEM #100186</div><div class="price">$336.00</div><ul><li>For previous-generation eSpring UV systems (100188, 100189, 110720, 118384)</li><li>Carbon block + UV lamp cartridge, 140+ contaminants</li><li>Same once-a-year / 1,320-gal rhythm</li></ul><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop legacy cartridge →</a></div>
+      <div class="card reveal tilt"><span class="tag blue">Convert / replace</span><h3>Auxiliary Faucet Replacement Kit</h3><div class="itemno">ITEM #125627</div><div class="price">$161.00</div><p>Complete kit — faucet, hoses and tubes — to replace an aux faucet or convert an above-counter unit to below-counter.</p><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop the kit →</a></div>
+      <div class="card reveal tilt"><span class="tag blue">Convert / replace</span><h3>Replacement Diverter Kit</h3><div class="itemno">ITEM #127066</div><div class="price">$225.00</div><p>Full diverter kit with tubing and connections. Converts a below-counter unit to above-counter, or replaces a worn diverter. Ceramic-disk instant on/off plus a sprayer function.</p><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop the kit →</a></div>
+      <div class="card reveal tilt"><span class="tag blue">Replacement part</span><h3>Replacement Diverter</h3><div class="itemno">ITEM #127065</div><div class="price">$89.25</div><p>Direct replacement diverter for any existing diverter on both new and previous-generation eSpring units.</p><a class="mini-cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">Shop diverter →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow reveal">⚙️ The Tech</div>
+    <h2 class="reveal">The tech story — <span class="hl">features that matter</span></h2>
+    <p class="sub reveal">Two purification technologies in one system, certified by independent organizations — not just claimed by the maker.</p>
+    <div class="grid c3">
+      <div class="card reveal"><h3>💜 UV-C LED purification</h3><p>Amway is the first company to have a UV-C LED water treatment system certified by NSF International to NSF/ANSI Standard 55 for Class B microbial reduction. LEDs last up to 10 years — no annual UV lamp to replace or throw away.</p></div>
+      <div class="card reveal"><h3>🖤 3-layer e3 Carbon Filter</h3><p>Pre-Filter + Defense Guard + pressed Carbon Block. Reduces 170+ contaminants including PFOA/PFOS, microplastics down to 0.2 microns, lead, mercury, VOCs, pesticides and 19 categories of pharmaceuticals.</p></div>
+      <div class="card reveal"><h3>💎 Minerals stay in</h3><p>Filtration targets contaminants — beneficial minerals like calcium, magnesium, potassium and zinc pass through, the way Amway designed it.</p></div>
+      <div class="card reveal"><h3>📱 Smart monitoring</h3><p>Enhanced display shows filter life, UV-C LED status and connectivity. The Amway Healthy Home™ app tracks usage, alerts you before a filter expires and lets you order the replacement in a tap.</p></div>
+      <div class="card reveal"><h3>🏅 Independently certified</h3><p>NSF/ANSI Standards 42, 53, 55 and 401, plus the Water Quality Association Gold Seal — claims backed by third-party test data.</p></div>
+      <div class="card reveal"><h3>⚡ Efficient by design</h3><p>25% less energy in use than the previous model, 0.75 GPM flow, and one cartridge a year instead of a shelf of pitcher filters.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section id="different">
+  <div class="wrap">
+    <div class="eyebrow reveal">⭐ The Difference</div>
+    <h2 class="reveal">What we have <span class="hl">that most don't</span></h2>
+    <p class="sub reveal">Honest differences, tied to published facts — compare any pitcher, fridge or gravity filter against this list.</p>
+    <div class="grid c2">
+      <div class="card reveal"><h3>💜 UV treatment — most pitchers have none</h3><p>Typical pitcher and fridge filters are carbon-only. eSpring adds a second, independent technology: UV-C LED treatment for bacteria, viruses and cysts, certified to NSF/ANSI 55 Class B — a first for UV-C LED systems.</p></div>
+      <div class="card reveal"><h3>📜 Certification breadth</h3><p>Four NSF/ANSI standards (42, 53, 55, 401) plus WQA Gold Seal on one system. Many basic filters certify to Standard 42 (taste/odor) only.</p></div>
+      <div class="card reveal"><h3>🛢️ Capacity per cartridge</h3><p>1,320 gallons from a single cartridge, changed once a year in about 2 minutes with no tools. Small pitcher cartridges are typically rated in the tens of gallons and changed every couple of months.</p></div>
+      <div class="card reveal"><h3>🚰 Real plumbing, real faucet options</h3><p>Designer faucet finishes (Nickel, Black, Chrome), auxiliary faucet, single-line and diverter installs — purified water from a real tap at 0.75 GPM, not a slow drip into a pitcher you refill all day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="us" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow reveal">🤝 Why Buy From Us</div>
+    <h2 class="reveal">Why choose <span class="hl">Clark Essential Products</span></h2>
+    <p class="sub reveal">You can buy eSpring from any IBO. Here's what you get buying it through our shop — from a real Baltimore family business, not a call center.</p>
+    <div class="grid c3">
+      <div class="card reveal"><h3>🤝 Personal, local support</h3><p>Questions before or after install? You reach us — Nathan &amp; family — and we'll help you sort it out, not a ticket queue.</p></div>
+      <div class="card reveal"><h3>🧭 Help picking the right setup</h3><p>Renter or homeowner? Outlet under the sink or not? We'll walk the above- vs. below-counter choice with you so you order the right kit the first time.</p></div>
+      <div class="card reveal"><h3>🛡️ Backed by Amway</h3><p>Every unit carries Amway's 5-year limited warranty and is covered by the Amway Satisfaction Guarantee (180-day satisfaction guarantee on Amway products — see the shop for current terms). We help you with warranty and filter reminders too.</p></div>
+    </div>
+    <div class="center reveal" style="margin-top:30px">
+      <a class="cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop With Clark Essential Products</a>
+      <p class="note" style="margin-top:10px">All purchases are completed securely in our official Amway MyShop — that's how your order is properly credited to our business.</p>
+      <div class="steps">
+        <div class="step"><b>STEP 1 — Pick your model</b>Above-counter if you rent, below-counter if you own. Not sure? The comparison above makes it simple.</div>
+        <div class="step"><b>STEP 2 — Tap any Shop button</b>Every button on this page goes to the same place: our official Clark Essential Products shop on Amway.com.</div>
+        <div class="step"><b>STEP 3 — Check out securely</b>Amway handles payment, shipping, the 5-year warranty and the satisfaction guarantee. We're here if you need help choosing or installing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow reveal">❓ Good Questions</div>
+    <h2 class="reveal">Questions, <span class="hl">answered straight</span></h2>
+    <p class="sub reveal">The things people actually ask before they buy.</p>
+    <div class="faq reveal"><button>Is installation hard? <span class="chev">▾</span></button><div class="ans"><p>The above-counter model simply screws onto most standard kitchen faucets with its diverter — no tools, no plumber, no plumbing changes. Below-counter models connect under the sink and need a grounded outlet nearby; the designer and auxiliary faucet kits include the faucet, tubing and fittings. Many owners self-install; a plumber or handyman can do a below-counter install if you'd rather not.</p></div></div>
+    <div class="faq reveal"><button>I'm renting — can I still use one? <span class="chev">▾</span></button><div class="ans"><p>Yes — that's exactly what the Above the Counter Unit with Diverter (#122940) is made for. It attaches to your existing faucet and comes back off when you move, leaving nothing behind.</p></div></div>
+    <div class="faq reveal"><button>How often do I change the filter — and how do I know? <span class="chev">▾</span></button><div class="ans"><p>Once a year or every 1,320 gallons (5,000 L), whichever comes first. You don't have to remember: the unit's display tracks filter life, and the Amway Healthy Home™ app monitors usage and alerts you. The change itself is "2-1-0" — about 2 minutes, 1 time per year, 0 tools, without taking the unit apart.</p></div></div>
+    <div class="faq reveal"><button>What does the water actually cost per gallon? <span class="chev">▾</span></button><div class="ans"><p>Using the verified prices on this page: a replacement e3 cartridge is $293 and treats up to 1,320 gallons — about <b>$0.22 per gallon</b> for ongoing filtration. In year one, the $1,508 unit spread over its first cartridge's 1,320 gallons is about $1.14 per gallon, then drops to the filter-only cost each year after. Compare that with bottled water bought by the case — and the hauling that comes with it.</p></div></div>
+    <div class="faq reveal"><button>Does it remove the good minerals too? <span class="chev">▾</span></button><div class="ans"><p>No — that's by design. The e3 Carbon Filter targets contaminants while beneficial minerals such as calcium, magnesium, potassium and zinc pass through.</p></div></div>
+    <div class="faq reveal"><button>What water can it be used with? <span class="chev">▾</span></button><div class="ans"><p>eSpring is designed only for use with potable water deemed safe to drink by local public health authorities — it's a last-step purifier for treated municipal-style water, not a device for untreated well or surface water unless that water is already potable.</p></div></div>
+    <div class="center reveal" style="margin-top:28px">
+      <a class="cta" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">💧 Get Your eSpring — Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--ink)">Clark Essential Products</b> · Amway Independent Business Owners · Baltimore, MD</p>
+    <p style="margin-top:8px">Shop: <a href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">amway.com/myshop/n8andshawna</a> — all eSpring purchases are completed there so your order is credited correctly.</p>
+    <p style="margin-top:8px">Product facts and claims are Amway's published claims for the new eSpring™ Water Purifier (UV-C LED + e3 Carbon Filter). eSpring is designed only for use with potable water deemed safe to drink by local public health authorities. Actual filter life depends on water quality and usage.</p>
+    <p style="margin-top:8px"><b>Lineup &amp; pricing checked on amway.com — Nov 12, 2026.</b> Prices are U.S. retail prices shown on amway.com product pages and the current Amway U.S. Home catalog at check time; prices and availability can change — the price in the shop at checkout governs.</p>
+  </div>
+</footer>
+<button id="toTop" aria-label="Back to top">💧</button>
+
+<script>
+// E5 scroll progress + parallax journey scrub
+var scene=document.getElementById('scene'), layers=scene.querySelectorAll('.layer'),
+    stageItems=document.querySelectorAll('.stage-nav li'),
+    stageNum=document.getElementById('stageNum'), stageText=document.getElementById('stageText'),
+    stageTexts=['tap water, straight from the line','pre-filter trapping sediment & scale','carbon block reducing 170+ contaminants','UV-C LED destroying bacteria, viruses & cysts','clean, great-tasting water — minerals kept'];
+// Build particles
+var pl=document.getElementById('particleLayer'), particles=[];
+var colors=['orange','blue','grey'];
+for(var i=0;i<26;i++){var d=document.createElement('div');d.className='particle '+colors[i%3];d.style.left=(38+Math.random()*24)+'%';d.style.top=(4+Math.random()*10)+'%';pl.appendChild(d);particles.push({el:d,seed:Math.random(),x:(Math.random()*90-45)});}
+function onScroll(){
+  var st=window.scrollY, dh=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('progress').style.width=(dh>0?(st/dh*100):0)+'%';
+  var r=scene.getBoundingClientRect(), total=r.height+window.innerHeight;
+  var p=Math.min(1,Math.max(0,(window.innerHeight-r.top)/total)); // 0..1 through scene
+  layers.forEach(function(l){var depth=parseFloat(l.getAttribute('data-depth')||1);l.style.transform='translateY('+((p-.5)*36*(depth-.6))+'px)';});
+  var stage=Math.min(4,Math.floor(p*5));
+  stageItems.forEach(function(li,idx){li.classList.toggle('active',idx===stage);});
+  stageNum.textContent=stage+1; stageText.textContent=stageTexts[stage];
+  particles.forEach(function(pt,i){
+    var travel=Math.min(1,Math.max(0,p*1.15 - pt.seed*.12));
+    var y=travel*78, x=pt.x*(1-travel*.85);
+    var trapped = (i%3===0 && travel>.28) || (i%3===1 && travel>.55);
+    var killed = (i%3===2 && travel>.78);
+    var op=1, scale=1;
+    if(trapped){op=Math.max(0,1-(travel-(i%3===0?.28:.55))*4); scale=.4;}
+    if(killed){op=0;}
+    pt.el.style.transform='translate('+x+'px,'+(y*5.6)+'px) scale('+scale+')';
+    pt.el.style.opacity=op;
+  });
+}
+window.addEventListener('scroll',onScroll,{passive:true}); window.addEventListener('resize',onScroll); onScroll();
+// A6 reveal + A7 count-up
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');
+  e.target.querySelectorAll('.count').forEach(function(c){if(c.dataset.done)return;c.dataset.done=1;var to=+c.dataset.to,t0=null;
+    function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1400);c.textContent=Math.round(to*(0.2+0.8*k*k)).toLocaleString();if(k<1)requestAnimationFrame(step);else c.textContent=to.toLocaleString();}
+    requestAnimationFrame(step);});
+  io.unobserve(e.target);}});},{threshold:.18});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+// Counters outside .reveal blocks (hero stats) get their own observer
+function runCount(c){if(c.dataset.done)return;c.dataset.done=1;var to=+c.dataset.to,t0=null;function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1400);c.textContent=Math.round(to*(0.2+0.8*k*k)).toLocaleString();if(k<1)requestAnimationFrame(step);else c.textContent=to.toLocaleString();}requestAnimationFrame(step);}
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){runCount(e.target);cio.unobserve(e.target);}});},{threshold:.4});
+document.querySelectorAll('.count').forEach(function(c){cio.observe(c);});
+// A8 tilt on hover
+document.querySelectorAll('.tilt').forEach(function(card){
+  card.addEventListener('pointermove',function(ev){var r=card.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width-.5,y=(ev.clientY-r.top)/r.height-.5;card.style.transform='perspective(800px) rotateY('+(x*7)+'deg) rotateX('+(-y*7)+'deg) translateY(-3px)';});
+  card.addEventListener('pointerleave',function(){card.style.transform='';});
+});
+// A9 FAQ accordion
+document.querySelectorAll('.faq button').forEach(function(b){b.addEventListener('click',function(){var f=b.parentElement,was=f.classList.contains('open');document.querySelectorAll('.faq').forEach(function(x){x.classList.remove('open');});if(!was)f.classList.add('open');});});
+// E7 before/after slider
+var baR=document.getElementById('baRange'), baRight=document.getElementById('baRight');
+baR.addEventListener('input',function(){baRight.style.width=baR.value+'%';});
+// Hero floating particles
+var fx=document.getElementById('heroFx');
+for(var j=0;j<14;j++){var sp=document.createElement('span');var sz=6+Math.random()*14;sp.style.width=sz+'px';sp.style.height=sz+'px';sp.style.left=(Math.random()*98)+'%';sp.style.animationDuration=(7+Math.random()*8)+'s';sp.style.animationDelay=(Math.random()*8)+'s';if(j%4===0)sp.className='warm';fx.appendChild(sp);}
+// Ripple on CTA taps
+document.querySelectorAll('.cta').forEach(function(btn){btn.addEventListener('pointerdown',function(ev){var r=btn.getBoundingClientRect(),d=Math.max(r.width,r.height),rip=document.createElement('span');rip.className='ripple';rip.style.width=d+'px';rip.style.height=d+'px';rip.style.left=(ev.clientX-r.left-d/2)+'px';rip.style.top=(ev.clientY-r.top-d/2)+'px';btn.appendChild(rip);setTimeout(function(){rip.remove();},680);});});
+// UV amber glow + back-to-top visibility (inside scroll handler data via listener)
+var uvGlow=document.getElementById('uvGlow'), toTop=document.getElementById('toTop');
+window.addEventListener('scroll',function(){var r2=scene.getBoundingClientRect();var p2=Math.min(1,Math.max(0,(window.innerHeight-r2.top)/(r2.height+window.innerHeight)));uvGlow.style.opacity=(p2>.5&&p2<.95)?String(Math.min(1,(p2-.5)*3)):0;toTop.classList.toggle('show',window.scrollY>700);},{passive:true});
+toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+// duplicate marquee for seamless loop
+var mt=document.getElementById('mtrack'); mt.innerHTML+=mt.innerHTML;
+</script>
+</body>
+</html>
